@@ -1,0 +1,117 @@
+:root {
+  --midnight-dark: #020617;
+  --midnight-card: #0f172a;
+  --midnight-border: #1e293b;
+  --blue-accent: #2563eb;
+  --blue-hover: #1d4ed8;
+  --cyan-accent: #38bdf8;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--midnight-dark);
+  color: var(--text);
+  font-family: 'Cinzel', 'Times New Roman', serif, sans-serif;
+}
+
+.topbar {
+  width: 100%;
+  padding: 28px 16px 44px;
+  background: #02040a;
+  color: #fff;
+  text-align: center;
+  border-bottom: 2px solid var(--blue-accent);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--blue-accent);
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 12px 0 0;
+  font-size: clamp(1.6em, 5vw, 2.4em);
+  color: #f8fafc;
+}
+
+h1 span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.55em;
+  font-weight: normal;
+}
+
+.card {
+  width: min(840px, calc(100% - 32px));
+  margin: -24px 0 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: var(--midnight-card);
+  border: 1px solid var(--midnight-border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(37, 99, 235, 0.15);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid var(--midnight-border);
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--midnight-dark);
+  border: 1px solid var(--midnight-border);
+  color: var(--text);
+  font-size: 0.95em;
+}
+
+#message:empty {
+  display: none;
+}
+
+#message {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--blue-accent);
+  color: #fff;
+  font-weight: bold;
+}
+
+.caption {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+}

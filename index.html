@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessed Maiden - Gacha Mayhem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Blessed Maiden <span>Gacha Mayhem</span></h1>
+  </header>
+
+  <main class="card">
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <div class="info">
+      <span class="chip">WASD / Panah: Gerak</span>
+      <span class="chip">M / Tombol: Mute Suara</span>
+      <span id="message"></span>
+    </div>
+
+    <p class="caption">Collect the Radiant Tides and avoid the Threnodians!</p>
+  </main>
+
+  <!-- Audio Latar Belakang -->
+  <audio id="bgmAudio" src="star_bouncing_ost.mp3" preload="auto" loop></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
